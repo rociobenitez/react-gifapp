@@ -1,0 +1,1 @@
+@import"https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap";:root{--font-primary: "Roboto", Helvetica, Arial, sans-serif;--blue-primary: #1876D1}*{font-family:var(--font-primary);font-weight:400}h3{font-size:1.3rem;margin-bottom:5px;color:var(--blue-primary);font-weight:500}
