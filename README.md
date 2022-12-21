@@ -22,3 +22,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - Type a topic or category in the search engine to find related gifs.
 - If you perform several searches without refreshing the browser, the gifts will be added to the gallery.
 - It's a fun app ! 🤪
+
+
+![Demo GifApp](/demo-gif-app.png "Demo GifApp")
