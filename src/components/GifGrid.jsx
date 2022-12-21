@@ -1,5 +1,6 @@
-import { ImageListItem } from '@mui/material';
 import { useFetchGifs } from '../hooks/useFetchGifs';
+import PropTypes from 'prop-types';
+import { ImageItem } from '.';
 
 export const GifGrid = ({ category }) => {
 
@@ -11,17 +12,17 @@ export const GifGrid = ({ category }) => {
                 isLoading && ( <h3>Cargando...</h3> )
             }
             {
-                images.map( ({ id, title, url }) => (
-                    <ImageListItem key = { id }>
-                        <img
-                            src      = { `${url}?w=164&h=164&fit=crop&auto=format` }
-                            srcSet   = { `${url}?w=164&h=164&fit=crop&auto=format&dpr=2 2x` }
-                            alt      = { title }
-                            loading  = "lazy"
-                        />
-                    </ImageListItem>
+                images.map( image => (
+                    <ImageItem
+                        key = { image.id }
+                        { ...image }
+                    />
                 ))
             }
         </>
     )
+}
+
+GifGrid.propTypes = {
+    category : PropTypes.string.isRequired
 }

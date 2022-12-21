@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in <ImageItem /> match with the snapshot 1`] = `
+<div>
+  <li
+    class="MuiImageListItem-root css-l086p4-MuiImageListItem-root"
+    style="height: auto; grid-column-end: span 1; grid-row-end: span 1;"
+  >
+    <img
+      alt="cheese bar"
+      class="MuiImageListItem-img"
+      loading="lazy"
+      src="https://gifapp.com/cheese-bar?w=164&h=164&fit=crop&auto=format"
+      srcset="https://gifapp.com/cheese-bar?w=164&h=164&fit=crop&auto=format&dpr=2 2x"
+    />
+  </li>
+</div>
+`;

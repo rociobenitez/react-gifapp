@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import PropTypes from 'prop-types'
 import { Input } from '@mui/material'
 
 export const AddCategory = ({ onNewCategory }) => {
@@ -19,7 +20,7 @@ export const AddCategory = ({ onNewCategory }) => {
     }
 
     return (
-        <form onSubmit = { onSubmit } >        {/* (ev) => onSubmit(ev) */}
+        <form onSubmit = { onSubmit } aria-label='form'>        {/* (ev) => onSubmit(ev) */}
             <Input
                 fullWidth 
                 type        = "text"
@@ -30,4 +31,9 @@ export const AddCategory = ({ onNewCategory }) => {
             />
         </form>   
     )
+}
+
+
+AddCategory.propTypes = {
+    onNewCategory : PropTypes.func.isRequired
 }
