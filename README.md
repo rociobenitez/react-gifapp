@@ -24,4 +24,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - It's a fun app ! 🤪
 
 
-![Demo GifApp](/demo-gif-app.png "Demo GifApp")
+![Demo GifApp](https://github.com/rociobenitez/react-gifapp/blob/main/public/demo-gif-app.png)
